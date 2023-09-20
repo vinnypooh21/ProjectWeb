@@ -1,1 +1,35 @@
-HTML TEST
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dateiupload</title>
+</head>
+<body>
+    <h1>Dateiupload</h1>
+
+    <?php
+    // Datenbankverbindung herstellen (verwenden Sie Ihre eigenen Zugangsdaten)
+    $servername = "localhost";
+    $username = "root";
+    $password = "neues-passwort";
+    $dbname = "Benutzeranmeldung";
+
+    $conn = new mysqli($servername, $username, $password, $dbname);
+
+    // Überprüfen Sie die Verbindung auf Fehler
+    if ($conn->connect_error) {
+        die("Verbindung zur Datenbank fehlgeschlagen: " . $conn->connect_error);
+    }
+
+    // Hier können Sie den Upload-Button einfügen
+    echo '<form action="upload.php" method="post" enctype="multipart/form-data">';
+    echo '    <input type="file" name="datei" id="datei">';
+    echo '    <input type="submit" value="Hochladen" name="submit">';
+    echo '</form>';
+
+    // Datenbankverbindung schließen
+    $conn->close();
+    ?>
+
+</body>
+</html>
+
