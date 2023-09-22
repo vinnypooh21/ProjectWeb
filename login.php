@@ -19,6 +19,7 @@ $Passwort = $_POST["Passwort"];
 // SQL-Abfrage zum Überprüfen der Anmeldedaten
 $sql = "SELECT * FROM Benutzer WHERE Benutzername = '$Benutzername' AND Passwort = '$Passwort'";
 $result = $conn->query($sql);
+echo "test data, $Benutzername! $Passwort";
 
 if ($result->num_rows == 1) {
     // Anmeldung erfolgreich
