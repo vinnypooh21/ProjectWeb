@@ -13,8 +13,8 @@ if ($conn->connect_error) {
 }
 
 // Benutzereingaben aus dem Formular abrufen
-$Benutzername = $_POST["Benutzername"];
-$Passwort = $_POST["Passwort"];
+$Benutzername = $_POST["benutzername"];
+$Passwort = $_POST["passwort"];
 
 // SQL-Abfrage zum Überprüfen der Anmeldedaten
 $sql = "SELECT * FROM Benutzer WHERE Benutzername = '$Benutzername' AND Passwort = '$Passwort'";
