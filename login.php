@@ -13,16 +13,16 @@ if ($conn->connect_error) {
 }
 
 // Benutzereingaben aus dem Formular abrufen
-$benutzername = $_POST["Benutzername"];
-$passwort = $_POST["Passwort"];
+$Benutzername = $_POST["Benutzername"];
+$Passwort = $_POST["Passwort"];
 
 // SQL-Abfrage zum Überprüfen der Anmeldedaten
-$sql = "SELECT * FROM Benutzer WHERE Benutzername = '$benutzername' AND Passwort = '$passwort'";
+$sql = "SELECT * FROM Benutzer WHERE Benutzername = '$Benutzername' AND Passwort = '$Passwort'";
 $result = $conn->query($sql);
 
 if ($result->num_rows == 1) {
     // Anmeldung erfolgreich
-    echo "Anmeldung erfolgreich. Willkommen, $benutzername!";
+    echo "Anmeldung erfolgreich. Willkommen, $Benutzername!";
 } else {
     // Anmeldung fehlgeschlagen
     echo "Anmeldung fehlgeschlagen. Überprüfen Sie Ihre Anmeldeinformationen.";
