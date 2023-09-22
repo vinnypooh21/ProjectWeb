@@ -58,22 +58,15 @@ body {
     animation: scaleOut 3s ease-in-out;
 }
 
-.dotted-border {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border: 2px dashed transparent;
-    border-radius: 10px;
-    animation: dashBorder 2s infinite linear;
-}
+
 
 .login-box {
     background-color: #fff;
     padding: 200px;
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding-bottom: 10%;
+    padding-top: 10%;
     text-align: center;
 }
 
