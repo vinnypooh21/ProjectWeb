@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Upload & Download Service</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Verknüpfen Sie hier Ihre CSS-Datei -->
+</head>
+<body>
+    <header>
+        <h1>Data Upload & Download Service</h1>
+    </header>
+
+    <section class="login-section">
+        <h2>Login</h2>
+        <p>Bitte melden Sie sich an, um Dateien hochzuladen und herunterzuladen.</p>
+        <a href="login.php"><button>Login</button></a>
+    </section>
+
+    <section class="download-section">
+        <h2>Daten herunterladen</h2>
+        <ul>
+            <!-- Hier können Sie Links zu den herunterladbaren Dateien einfügen -->
+            <li><a href="download.php?file=example1.pdf">Beispiel 1</a></li>
+            <li><a href="download.php?file=example2.zip">Beispiel 2</a></li>
+            <!-- Fügen Sie weitere Dateilinks hinzu, wie es benötigt wird -->
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; <?php echo date("Y"); ?> Data Upload & Download Service</p>
+    </footer>
+</body>
+</html>
