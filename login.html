@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style_login.css">
-    <title>Animated Login</title>
+    
     <title>Benutzeranmeldung</title>
 </head>
 
@@ -18,14 +18,22 @@
 <body>
 
     <h1>Benutzeranmeldung</h1>
-    <form action="login.php" method="post">
-        <label for="benutzername">Benutzername:</label>
-        <input type="text" id="benutzername" name="benutzername" required><br><br>
+    <div class="container">
+        <div class="box">
+            <div class="dotted-border"></div>
+            <div class="login-box">
+                <h1>Login</h1>
+                <form action="login.php" method="post">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
 
-        <label for="passwort">Passwort:</label>
-        <input type="password" id="passwort" name="passwort" required><br><br>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
 
-        <input type="submit" value="Anmelden">
-    </form>
+                    <input type="submit" value="Login">
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

@@ -20,10 +20,12 @@
 }
 
 .nav-menu a:hover {
-    background-color: #555; /* Hintergrundfarbe bei Hover */
+    background-color: #f093f8; /* Hintergrundfarbe bei Hover */
 }
 
 /* Styles for login box and circle */
+
+/* Styles for login box and dotted border */
 
 body {
     font-family: Arial, sans-serif;
@@ -37,8 +39,34 @@ body {
 }
 
 .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.box {
     position: relative;
-    perspective: 1000px;
+    width: 300px;
+    height: 300px;
+    border: 2px dashed #fff;
+    background: linear-gradient(to bottom, #fff, #8e44ad);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: scaleIn 1s ease-in-out;
+}
+
+.dotted-border {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 2px dashed transparent;
+    border-radius: 10px;
+    animation: dashBorder 2s infinite linear;
 }
 
 .login-box {
@@ -47,16 +75,19 @@ body {
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
-    transform: translateX(-100%);
-    transition: transform 1s ease-in-out;
 }
 
-.login-box:hover {
-    transform: translateX(0);
+h1 {
+    font-size: 2em;
 }
 
 form {
     margin-top: 20px;
+}
+
+label {
+    display: block;
+    font-size: 1.2em;
 }
 
 input[type="text"],
@@ -81,18 +112,25 @@ input[type="submit"]:hover {
     background-color: #2980b9;
 }
 
-.circle {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    background-color: #3498db;
-    border-radius: 50%;
-    top: 50%;
-    right: -50px;
-    transform: translateY(-50%);
-    transition: right 2s ease-in-out infinite;
+@keyframes scaleIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
-.container:hover .circle {
-    right: calc(100% - 50px);
+@keyframes dashBorder {
+    0% {
+        border-color: #fff;
+    }
+    50% {
+        border-color: #8e44ad;
+    }
+    100% {
+        border-color: #fff;
+    }
 }
