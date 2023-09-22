@@ -1,38 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style_login.css">
-    
     <title>Benutzeranmeldung</title>
 </head>
-
-<div class="nav-menu">
-    <a href="landingpage.html">Home</a>
-    <a href="register.html">Registrieren</a>
-    <a href="login.html">Login</a>
-</div>
-
-
 <body>
-
-  
     <div class="container">
-        <div class="box">
-            
-            <div class="login-box">
-                <h1>Login</h1>
-                <form action="login.php" method="post">
-                    <label for="username">Username:</label>
-                    <input type="text" id="username" name="username" required>
+        <div class="nav-menu">
+            <a href="landingpage.html">Home</a>
+            <a href="register.html">Registrieren</a>
+            <a href="login.html">Login</a>
+        </div>
 
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" name="password" required>
+        <div class="login-box">
+            <h1>Benutzeranmeldung</h1>
+            <form action="login.php" method="post">
+                <label for="benutzername">Benutzername:</label>
+                <input type="text" id="benutzername" name="benutzername" required><br><br>
 
-                    <input type="submit" value="Login">
-                </form>
-            
+                <label for="passwort">Passwort:</label>
+                <input type="password" id="passwort" name="passwort" required><br><br>
+
+                <input type="submit" value="Anmelden">
+            </form>
         </div>
     </div>
 </body>
