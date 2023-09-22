@@ -47,8 +47,8 @@ body {
 
 .box {
     position: relative;
-    width: 3000px;
-    height: 3000px;
+    width: 300px;
+    height: 300px;
     border: 2px dashed #fff;
     background: linear-gradient(to bottom, #fff, #8e44ad);
     border-radius: 100px;
