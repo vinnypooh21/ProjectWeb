@@ -1,24 +1,5 @@
 /* style.css */
 
-/* Allgemeine Stildefinitionen für den gesamten Inhalt */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(to bottom, #3498db, #8e44ad); /* Blau zu Lila Farbverlauf */
-    color: #fff; /* Textfarbe auf Weiß setzen */
-}
-
-/* Header-Stil */
-header {
-    text-align: center;
-    padding: 20px;
-}
-
-header h1 {
-    font-size: 2.5em;
-}
-
 /* Link-Menü-Stil */
 .nav-menu {
     position: fixed;
@@ -42,6 +23,27 @@ header h1 {
 .nav-menu a:hover {
     background-color: #555; /* Hintergrundfarbe bei Hover */
 }
+
+
+/* Allgemeine Stildefinitionen für den gesamten Inhalt */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #3498db, #8e44ad); /* Blau zu Lila Farbverlauf */
+    color: #fff; /* Textfarbe auf Weiß setzen */
+}
+
+/* Header-Stil */
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
 
 
 /* Login-Bereich-Stil */
