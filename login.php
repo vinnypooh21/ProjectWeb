@@ -1,7 +1,7 @@
 <?php
 // Datenbankverbindung herstellen (verwenden Sie Ihre eigenen Zugangsdaten)
 $servername = "localhost";
-$username = "IhrBenutzername";
+$username = "root";
 $password = "neues-passwort";
 $dbname = "Benutzeranmeldung";
 
