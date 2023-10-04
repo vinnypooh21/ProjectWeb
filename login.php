@@ -16,6 +16,14 @@ if ($conn->connect_error) {
 $Benutzername = $_POST["benutzername"];
 $Passwort = $_POST["passwort"];
 
+
+        if (password_verify($Passwort, $hash)) {
+            echo "Das eingegebene Passwort ist korrekt.";
+        } else {
+            echo "Das eingegebene Passwort ist falsch.";
+        }
+
+
 // SQL-Abfrage zum Überprüfen der Anmeldedaten
 $sql = "SELECT * FROM Benutzer WHERE Benutzername = '$Benutzername' AND Passwort = '$Passwort'";
 $result = $conn->query($sql);
