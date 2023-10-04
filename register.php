@@ -1,9 +1,9 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $benutzername = $_POST["benutzername"];
-    $passwort = $_POST["passwort"];
+    $Benutzername = $_POST["Benutzername"];
+    $Passwort = $_POST["Passwort"];
 
-    echo "Eingegebener Benutzername: " . $benutzername . "<br>";
-    echo "Eingegebenes Passwort: " . $passwort . "<br>";
+    echo "Eingegebener Benutzername: " . $Benutzername . "<br>";
+    echo "Eingegebenes Passwort: " . $Passwort . "<br>";
 }
 ?>
