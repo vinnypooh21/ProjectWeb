@@ -1,6 +1,6 @@
 <?php
-$Benutzername = "MaxMustermann";
-$Passwort = "GeheimesPasswort";
+$Benutzername = $_POST["benutzername"];
+$Passwort = $_POST["passwort"];
 
 echo "Anmeldung erfolgreich. Willkommen, $Benutzername!";
 ?>
