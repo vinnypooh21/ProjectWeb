@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" type="text/css" href="style_login.css">
     <title>Benutzerregistrierung</title>
 </head>
 <body>
-    <h1>Benutzerregistrierung</h1>
-    <form method="POST" action="register.php">
-        <div>
-            <label for="username">Benutzername:</label>
-            <input type="text" name="Benutzername" id="Benutzername" required>
+    <div class="container">
+        <div class="nav-menu">
+            <a href="landingpage.html">Home</a>
+            <a href="register.html">Registrieren</a>
+            <a href="login.html">Login</a>
         </div>
 
-        <div>
-            <label for="password">Passwort:</label>
-            <input type="password" name="Passwort" id="Passwort" required>
-        </div>
+        <div class="login-box">
+            <h1>Benutzerregistrierung</h1>
+            <form action="register.php" method="post">
+                <label for="benutzername">Benutzername:</label>
+                <input type="text" id="benutzername" name="benutzername" required><br><br>
 
-        <div>
-            <input type="submit" value="Registrieren">
+                <label for="passwort">Passwort:</label>
+                <input type="password" id="passwort" name="passwort" required><br><br>
+
+                <input type="submit" value="Registrieren">
+            </form>
         </div>
-    </form>
+    </div>
 </body>
 </html>
-

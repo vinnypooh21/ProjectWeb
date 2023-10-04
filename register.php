@@ -1,9 +1,10 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $Benutzername = $_POST["Benutzername"];
-    $Passwort = $_POST["Passwort"];
+    $benutzername = $_POST["benutzername"];
+    $passwort = $_POST["passwort"];
 
-    echo "Eingegebener Benutzername: " . $Benutzername . "<br>";
-    echo "Eingegebenes Passwort: " . $Passwort . "<br>";
+    // Hier sollten Sie den Code zur Benutzerregistrierung einfügen.
+    
+    echo "Registrierung erfolgreich. Willkommen, $benutzername!";
 }
 ?>
