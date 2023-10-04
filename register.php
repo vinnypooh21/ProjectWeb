@@ -15,6 +15,12 @@ $Email = $_POST["Email"];
 // INSERT TO SQL
 $sql = "INSERT INTO Benutzer (Benutzername, Passwort, Email) VALUES ('$Benutzername', '$Passwort', '$Email')";
 
+if ($conn->query($sql) === TRUE) {
+    echo "Benutzerdaten wurden erfolgreich in die Datenbank eingefügt.";
+} else {
+    echo "Fehler beim Einfügen der Benutzerdaten: " . $conn->error;
+}
+
 // Überprüfen Sie die Verbindung auf Fehler
 
 if ($conn->connect_error) {
