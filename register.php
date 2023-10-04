@@ -14,7 +14,7 @@ $Passwort = $_POST["Passwort"];
 // Überprüfen Sie die Verbindung auf Fehler
 
 if ($conn->connect_error) {
-    (echo "Verbindung zur Datenbank fehlgeschlagen: " . $conn->connect_error);
+    echo "Verbindung zur Datenbank fehlgeschlagen: " ;
 }
 
 
