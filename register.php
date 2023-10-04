@@ -12,9 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $conn = new mysqli($servername, $username, $password, $dbname);
 
     // Überprüfen Sie die Verbindung auf Fehler
-    if ($conn->connect_error) {
-        die("Verbindung zur Datenbank fehlgeschlagen: " . $conn->connect_error);
-    }
+   
 
     // SQL-Abfrage zum Einfügen des Benutzers in die Datenbank
     $sql = "INSERT INTO Benutzer (Benutzername, Passwort) VALUES ('$benutzername', '$passwort')";
