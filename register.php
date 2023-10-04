@@ -13,9 +13,9 @@ $Passwort = $_POST["Passwort"];
 
 // Überprüfen Sie die Verbindung auf Fehler
 
-   
-        echo "Registrierung erfolgreich. Willkommen, $Benutzername $Passwort!";
-  
+if ($conn->connect_error) {
+    die("Verbindung zur Datenbank fehlgeschlagen: " . $conn->connect_error);
+}
 
 
 // Datenbankverbindung schließen
