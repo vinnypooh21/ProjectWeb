@@ -1,5 +1,5 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+ {
     $Benutzername = $_POST["benutzername"];
     $Passwort = $_POST["passwort"];
 
