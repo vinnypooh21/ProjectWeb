@@ -1,30 +1,4 @@
-
-<!DOCTYPE html>
-<html>
-<head>
-    <link rel="stylesheet" type="text/css" href="style_login.css">
-    <title>Benutzerregistrierung</title>
-</head>
-<body>
-    <div class="container">
-        <div class="nav-menu">
-            <a href="landingpage.html">Home</a>
-            <a href="register.html">Registrieren</a>
-            <a href="login.html">Login</a>
-        </div>
-
-        <div class="login-box">
-            <h1>Benutzerregistrierung</h1>
-            <form action="register.php" method="post">
-                <label for="benutzername">Benutzername:</label>
-                <input type="text" id="benutzername" name="benutzername" required><br><br>
-
-                <label for="passwort">Passwort:</label>
-                <input type="password" id="passwort" name="passwort" required><br><br>
-
-                <input type="submit" value="Registrieren">
-
-                <?php
+<?php
 // Datenbankverbindung herstellen (verwenden Sie Ihre eigenen Zugangsdaten)
 $servername = "localhost";
 $username = "root";
@@ -64,8 +38,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 // Datenbankverbindung schließen
 $conn->close();
 ?>
-            </form>
-        </div>
-    </div>
-</body>
-</html>
