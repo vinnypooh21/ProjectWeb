@@ -13,11 +13,11 @@ if ($conn->connect_error) {
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $Benutzername = $_POST["benutzername"];
-    $Passwort = $_POST["passwort"];
+    $benutzername = $_POST["benutzername"];
+    $passwort = $_POST["passwort"];
 
     // SQL-Abfrage zur Überprüfung, ob der Benutzer bereits existiert
-    $check_sql = "SELECT * FROM Benutzer WHERE Benutzername = '$Benutzername'";
+    $check_sql = "SELECT * FROM Benutzer WHERE Benutzername = '$benutzername'";
     $check_result = $conn->query($check_sql);
 
     if ($check_result->num_rows > 0) {
@@ -25,10 +25,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Der Benutzername ist bereits vergeben. Bitte wählen Sie einen anderen.";
     } else {
         // Benutzer registrieren
-        $insert_sql = "INSERT INTO Benutzer (Benutzername, Passwort) VALUES ('$Benutzername', '$Passwort')";
+        $insert_sql = "INSERT INTO Benutzer (Benutzername, Passwort) VALUES ('$benutzername', '$passwort')";
 
         if ($conn->query($insert_sql) === TRUE) {
-            echo "Registrierung erfolgreich. Willkommen, $Benutzername!";
+            echo "Registrierung erfolgreich. Willkommen, $benutzername!";
         } else {
             echo "Fehler bei der Registrierung: " . $conn->error;
         }
