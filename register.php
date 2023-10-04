@@ -10,10 +10,10 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 
 $Benutzername = $_POST["Benutzername"];
 $Passwort = $_POST["Passwort"];
-$Mail = $_POST["Mail"];
+$Email = $_POST["Email"];
 
 // INSERT TO SQL
-$sql = "INSERT INTO Benutzer (Benutzername, Passwort, Mail) VALUES ('$Benutzername', '$Passwort', '$Mail')";
+$sql = "INSERT INTO Benutzer (Benutzername, Passwort, Email) VALUES ('$Benutzername', '$Passwort', '$Email')";
 
 // Überprüfen Sie die Verbindung auf Fehler
 
