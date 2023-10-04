@@ -25,11 +25,8 @@ if ($check_result->num_rows > 0) {
     echo "Der Benutzername ist bereits vergeben. Bitte wählen Sie einen anderen.";
 } else {
     // Benutzer registrieren
-    // Passwort sicher hashen, bevor es in die Datenbank gespeichert wird
-    $hashedPassword = password_hash($passwort, PASSWORD_DEFAULT);
+    $insert_sql = "INSERT INTO Benutzer (Benutzername, Passwort) VALUES ('$benutzername', '$passwort')";
     
-    $insert_sql = "INSERT INTO Benutzer (Benutzername, Passwort) VALUES ('$benutzername', '$hashedPassword')";
-
     if ($conn->query($insert_sql) === TRUE) {
         echo "Registrierung erfolgreich. Willkommen, $benutzername!";
     } else {
