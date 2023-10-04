@@ -1,9 +1,5 @@
 <?php
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $benutzername = $_POST["Benutzername"];
-    $passwort = $_POST["Passwort"];
-}
 // Datenbankverbindung herstellen (verwenden Sie Ihre eigenen Zugangsdaten)
 $servername = "localhost";
 $username = "root";
@@ -18,14 +14,14 @@ if ($conn->connect_error) {
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $Benutzername = $_POST["benutzername"];
-    $Passwort = $_POST["passwort"];
+    $Benutzername = $_POST["Benutzername"];
+    $Passwort = $_POST["Passwort"];
 
     // SQL-Abfrage zum Einfügen des Benutzers in die Datenbank
     $sql = "INSERT INTO Benutzer (Benutzername, Passwort) VALUES ('$Benutzername', '$Passwort')";
 
     if ($conn->query($sql) === TRUE) {
-        echo "Registrierung erfolgreich. Willkommen, $Benutzername!";
+        echo "Registrierung erfolgreich. Willkommen, $Benutzername $Passwort!";
     } else {
         echo "Fehler bei der Registrierung: " . $conn->error;
     }
