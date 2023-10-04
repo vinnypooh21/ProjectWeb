@@ -1,6 +1,6 @@
 <?php
 
-// Datenbankverbindung herstellen (verwenden Sie Ihre eigenen Zugangsdaten)
+// Datenbankverbindung herstellen 
 $servername = "localhost";
 $username = "root";
 $password = "neues-passwort";
@@ -10,7 +10,11 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 
 $Benutzername = $_POST["Benutzername"];
 $Passwort = $_POST["Passwort"];
-$sql = "INSERT INTO Benutzer (Benutzername, Passwort) VALUES ('$Benutzername', '$Passwort')";
+$Mail = $_POST["Mail"];
+
+// INSERT TO SQL
+$sql = "INSERT INTO Benutzer (Benutzername, Passwort, Mail) VALUES ('$Benutzername', '$Passwort', '$Mail')";
+
 // Überprüfen Sie die Verbindung auf Fehler
 
 if ($conn->connect_error) {
