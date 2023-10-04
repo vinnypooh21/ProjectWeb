@@ -1,16 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Benutzereingabe</title>
+    <link rel="stylesheet" type="text/css" href="style_login.css">
+    <title>Benutzerregistrierung</title>
 </head>
 <body>
-    <form method="post" action="register.php">
-        <label for="Benutzername">Eingabe:</label>
-        <input type="text" name="Benutzername" id="Benutzername">
+    <div class="container">
+        <div class="nav-menu">
+            <a href="landingpage.html">Home</a>
+            <a href="register.html">Registrieren</a>
+            <a href="login.html">Login</a>
+        </div>
 
-        <label for="Passwort">Eingabe:</label>
-        <input type="password" name="Passwort" id="Passwort">
-        <input type="submit" value="Absenden">
-    </form>
+        <div class="login-box">
+            <h1>Benutzerregistrierung</h1>
+            <form method="post" action="register.php">
+                <label for="Benutzername">Eingabe:</label>
+                <input type="text" name="Benutzername" id="Benutzername">
+        
+                <label for="Passwort">Eingabe:</label>
+                <input type="password" name="Passwort" id="Passwort">
+                <input type="submit" value="Absenden">
+            </form>
+        </div>
+    </div>
 </body>
 </html>
