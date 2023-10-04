@@ -12,8 +12,19 @@ $Benutzername = $_POST["Benutzername"];
 $Passwort = $_POST["Passwort"];
 $Email = $_POST["Email"];
 
+
+// PW HASH
+    
+
+    // Hash das Passwort
+    $hash = password_hash($Passwort, PASSWORD_DEFAULT);
+
+    // $hash enthält jetzt den gehashten Wert
+
+    echo "Gehashtes Passwort: " . $hash;
+
 // INSERT TO SQL
-$sql = "INSERT INTO Benutzer (Benutzername, Passwort, Email) VALUES ('$Benutzername', '$Passwort', '$Email')";
+$sql = "INSERT INTO Benutzer (Benutzername, Passwort, Email) VALUES ('$Benutzername', '$hash', '$Email')";
 
 if ($conn->query($sql) === TRUE) {
     echo "Benutzerdaten wurden erfolgreich in die Datenbank eingefügt.";
