@@ -21,6 +21,7 @@ else
     echo "Verbindung steeeeeht";
 }
 
+$sql = "INSERT INTO Benutzer (Benutzername, Passwort) VALUES ('$Benutzername', '$Passwort')";
 
 // Datenbankverbindung schließen
 $conn->close();
