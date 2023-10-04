@@ -23,12 +23,8 @@
                 <input type="password" id="passwort" name="passwort" required><br><br>
 
                 <input type="submit" value="Registrieren">
-            </form>
-        </div>
-    </div>
-</body>
-</html>
-<?php
+
+                <?php
 // Datenbankverbindung herstellen (verwenden Sie Ihre eigenen Zugangsdaten)
 $servername = "localhost";
 $username = "root";
@@ -68,3 +64,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 // Datenbankverbindung schließen
 $conn->close();
 ?>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
