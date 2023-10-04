@@ -8,13 +8,14 @@ $dbname = "Benutzeranmeldung";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
+$Benutzername = $_POST["Benutzername"];
+$Passwort = $_POST["Passwort"];
+
 // Überprüfen Sie die Verbindung auf Fehler
 
-    if ($conn->query($sql) === TRUE) {
+   
         echo "Registrierung erfolgreich. Willkommen, $Benutzername $Passwort!";
-    } else {
-        echo "Fehler bei der Registrierung: " ;
-    }
+  
 
 
 // Datenbankverbindung schließen
