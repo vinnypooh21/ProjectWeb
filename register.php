@@ -23,6 +23,9 @@ if ($conn->connect_error) {
 else
 {
     echo "Verbindung steeeeeht";
+    echo "Dein benutzername lautet $Benutzername " ;
+    echo "Deine Mail lautet $Email " ;
+    
 }
 
 
