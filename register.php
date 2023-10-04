@@ -1,16 +1,9 @@
 <?php
-// Datenbankverbindung herstellen (verwenden Sie Ihre eigenen Zugangsdaten)
-$servername = "localhost";
-$username = "root";
-$password = "neues-passwort";
-$dbname = "Benutzeranmeldung";
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $benutzername = $_POST["benutzername"];
+    $passwort = $_POST["passwort"];
 
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Überprüfen Sie die Verbindung auf Fehler
-if ($conn->connect_error) {
-    die("Verbindung zur Datenbank fehlgeschlagen: " . $conn->connect_error);
+    echo "Eingegebener Benutzername: " . $benutzername . "<br>";
+    echo "Eingegebenes Passwort: " . $passwort . "<br>";
 }
-// Datenbankverbindung schließen
-$conn->close();
 ?>
