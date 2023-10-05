@@ -31,7 +31,7 @@ if ($conn->query($sql) === TRUE) {
 } else {
     echo "Fehler beim Einfügen der Benutzerdaten: " . $conn->error;
 }
-
+// test
 // Überprüfen Sie die Verbindung auf Fehler
 
 if ($conn->connect_error) {
