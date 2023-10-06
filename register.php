@@ -26,10 +26,10 @@ $Email = $_POST["Email"];
 // INSERT TO SQL
 $sql = "INSERT INTO Benutzer (Benutzername, Passwort, Email) VALUES ('$Benutzername', '$hash', '$Email')";
 
-
-// LINUX SHELL USERADD
-    shell_exec("sudo useradd -m $Benutzername");
-    shell_exec("sudo passwd $Passwort");
+$output = shell_exec("sudo useradd -m $Benutzername");
+echo "Output: $output";
+$output = shell_exec("sudo passwd $Passwort");
+echo "Output: $output";
 
 if ($conn->query($sql) === TRUE) {
     echo "Benutzerdaten wurden erfolgreich in die Datenbank eingefügt.";
