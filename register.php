@@ -26,7 +26,7 @@ $Email = $_POST["Email"];
 // INSERT TO SQL
 $sql = "INSERT INTO Benutzer (Benutzername, Passwort, Email) VALUES ('$Benutzername', '$hash', '$Email')";
 
-$output = shell_exec("sudo useradd test");
+$output = shell_exec("sudo useradd rene");
 echo "Output: $output";
 $output = shell_exec("sudo passwd 12345");
 echo "Output: $output";
