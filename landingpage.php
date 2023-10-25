@@ -61,13 +61,17 @@
         }
         echo '</div>';
         ?>
-        <h2>Datei hochladen</h2>
-        <form action="upload.php" method="post" enctype="multipart/form-data">
-            <label for="datei" class="custom-upload-btn">Datei auswählen</label>
-            <input type="file" name="datei" id="datei" class="custom-upload-input">
-            <input class="custom-upload-submit" type="submit" value="Hochladen" name="submit">
-        </form>
-        
+        <?php
+        if (isset($_SESSION['user_name'])) {
+            echo '<h2>Datei hochladen</h2>';
+            echo '<form action="upload.php" method="post" enctype="multipart/form-data">';
+            echo '<label for="datei" class="custom-upload-btn">Datei auswählen</label>';
+            echo '<input type="file" name="datei" id="datei" class="custom-upload-input">';
+            echo '<input class="custom-upload-submit" type="submit" value="Hochladen" name="submit">';
+            echo '</form>';
+        }
+        ?>
+
 
     </section>
     <footer>
