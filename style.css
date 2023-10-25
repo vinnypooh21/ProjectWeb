@@ -112,3 +112,37 @@ footer {
 footer p {
     font-size: 1.2em;
 }
+
+input[type="file"] {
+    display: none;
+}
+
+/* Stile für den angepassten Upload-Button */
+.custom-upload-btn {
+    background-color: #0077cc;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.custom-upload-submit {
+    background-color: #0077ac;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Stile für das angepasste Upload-Element */
+.custom-upload-input {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.file{
+    background-color: #0077ab;
+}
