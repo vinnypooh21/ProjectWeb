@@ -12,14 +12,7 @@ if ($auth->login($Benutzername, $Passwort)) {
     echo "<p>Anmeldung erfolgreich. Willkommen, $Benutzername!</p>";
     session_start();
     $_SESSION['user_name'] = $Benutzername;
-} else {
-    echo "Anmeldung fehlgeschlagen. Überprüfen Sie Ihre Anmeldeinformationen.";
-}
-
-$auth->close();
-// $home_directory = $Benutzername;
-
-$userExist = shell_exec('cat /etc/passwd');
+    $userExist = shell_exec('cat /etc/passwd');
 $userArray = explode(":", $userExist);
 // var_dump(shell_exec('cat /etc/passwd'));
 $usersuche = "/home/".$Benutzername;
@@ -42,5 +35,9 @@ if ($linux_output) {
     shell_exec('sudo chmod -R 755 /home/'.$Benutzername);
 }
 }
+} else {
+    echo "Anmeldung fehlgeschlagen. Überprüfen Sie Ihre Anmeldeinformationen.";
+}
 
-?>
+$auth->close();
+// $home_directory = $Benutzername;

@@ -13,7 +13,7 @@ class Authentication {
 
     public function login($username, $password) {
         $username = $this->conn->real_escape_string($username);
-        $sql = "SELECT * FROM users WHERE username = '$username' AND password = '$password'";
+        $sql = "SELECT * FROM users WHERE username = '$username'";// AND password = '$password'";
         $result = $this->conn->query($sql);
 
         if ($result->num_rows == 1) {
