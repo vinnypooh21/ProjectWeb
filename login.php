@@ -1,42 +1,43 @@
 <?php
-// Datenbankverbindung herstellen (verwenden Sie Ihre eigenen Zugangsdaten)
-$servername = "localhost";
-$username = "root";
-$password = "neues-passwort";
-$dbname = "Benutzeranmeldung";
+ini_set('display_errors', 1); 
+use Authentication;
+require('Authentication.php');
 
-$conn = new mysqli($servername, $username, $password, $dbname);
+$auth = new Authentication("localhost", "tammo-g", "Yourpass_01", "loginforschool");
 
-// Überprüfen Sie die Verbindung auf Fehler
-if ($conn->connect_error) {
-    die("Verbindung zur Datenbank fehlgeschlagen: " . $conn->connect_error);
-}
-
-// Benutzereingaben aus dem Formular abrufen
 $Benutzername = $_POST["benutzername"];
 $Passwort = $_POST["passwort"];
+// var_dump($Benutzername, $Passwort);
+if ($auth->login($Benutzername, $Passwort)) {
+    echo "<p>Anmeldung erfolgreich. Willkommen, $Benutzername!</p>";
+    session_start();
+    $_SESSION['user_name'] = $Benutzername;
+    $userExist = shell_exec('cat /etc/passwd');
+$userArray = explode(":", $userExist);
+// var_dump(shell_exec('cat /etc/passwd'));
+$usersuche = "/home/".$Benutzername;
+// var_dump($userArray, $usersuche);
+if(array_search($usersuche, $userArray)){
+    // echo '<a href="landingpage.php">test</a>';
 
-
-        if (password_verify($Passwort, $hash)) {
-            echo "Das eingegebene Passwort ist korrekt.";
-        } else {
-            echo "Das eingegebene Passwort ist falsch.";
-        }
-
-
-// SQL-Abfrage zum Überprüfen der Anmeldedaten
-$sql = "SELECT * FROM Benutzer WHERE Benutzername = '$Benutzername' AND Passwort = '$Passwort'";
-$result = $conn->query($sql);
-
-
-if ($result->num_rows == 1) {
-    // Anmeldung erfolgreich
-    echo "Anmeldung erfolgreich. Willkommen, $Benutzername!";
+    header("Location: landingpage.php"); 
+}
+else{
+$linux_command = "sudo useradd -m -p" . " " . escapeshellarg($Benutzername);
+// exec($linux_command, $output, $return_var);
+$linux_output = shell_exec($linux_command);
+// var_dump($linux_output);
+if ($linux_output) {
+    die("Fehler beim Erstellen des Benutzers auf dem Linux-Server");
 } else {
-    // Anmeldung fehlgeschlagen
+    echo "Benutzer wurde erfolgreich erstellt";
+    shell_exec('sudo chown -R www-data:www-data /home/'.$Benutzername);
+    shell_exec('sudo chmod -R 755 /home/'.$Benutzername);
+}
+}
+} else {
     echo "Anmeldung fehlgeschlagen. Überprüfen Sie Ihre Anmeldeinformationen.";
 }
 
-// Datenbankverbindung schließen
-$conn->close();
-?>
+$auth->close();
+// $home_directory = $Benutzername;
