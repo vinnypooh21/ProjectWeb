@@ -7,7 +7,7 @@
     top: 0;
     height: 100%;
     width: 200px;
-    background-color: linear-gradient(to bottom, #d0d1d1, #b693c5); ; /* Hintergrundfarbe des Menüs */
+    background-color: linear-gradient(to bottom, #d0d1d1, #ae7dc3); ; /* Hintergrundfarbe des Menüs */
     padding: 20px 0;
     text-align: center;
 }
@@ -30,7 +30,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #d0d1d1, #b693c5); /* Blau zu Lila Farbverlauf */
+    background: linear-gradient(to bottom, #d0d1d1, #d3b6df); /* Blau zu Lila Farbverlauf */
     color: #fff; /* Textfarbe auf Weiß setzen */
 }
 
