@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
-    background: url('backr.png') center/cover no-repeat;
+    background: url('mirko.JPG') center/cover no-repeat;
     font-family: 'Helvetica Neue', Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -57,7 +57,7 @@ nav a {
 
 
 .hero {
-    background: url('hero_bg.jpg') center/cover no-repeat;
+    background: url('mirko.JPG') center/cover no-repeat;
     color: #fff;
     text-align: center;
     padding: 100px 0;
