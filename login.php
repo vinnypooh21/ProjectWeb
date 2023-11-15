@@ -3,7 +3,7 @@ ini_set('display_errors', 1);
 use Authentication;
 require('Authentication.php');
 
-$auth = new Authentication("localhost", "tammo-g", "Yourpass_01", "loginforschool");
+$auth = new Authentication("localhost", "root", "neues-passwort", "Benutzeranmeldung");
 
 $Benutzername = $_POST["benutzername"];
 $Passwort = $_POST["passwort"];
