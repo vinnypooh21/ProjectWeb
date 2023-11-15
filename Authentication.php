@@ -18,7 +18,7 @@ class Authentication {
 
         if ($result->num_rows == 1) {
             $row = $result->fetch_assoc();
-            $hash = $row['password'];
+            $hash = $row['Passwort'];
             
             if (password_verify($password, $hash)) {
                 return true;
