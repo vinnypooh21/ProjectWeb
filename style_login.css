@@ -6,7 +6,7 @@
     top: 0;
     height: 100%;
     width: 200px;
-    background-color: #333; /* Hintergrundfarbe des Menüs */
+    background-color: #200909; /* Hintergrundfarbe des Menüs */
     padding: 20px 0;
     text-align: center;
 }
@@ -20,7 +20,7 @@
 }
 
 .nav-menu a:hover {
-    background-color: #f093f8; /* Hintergrundfarbe bei Hover */
+    background-color: #f8c293; /* Hintergrundfarbe bei Hover */
 }
 
 /* Style für die Login-Box */
@@ -47,7 +47,7 @@ body {
     background-color: #fff;
     padding: 40px;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 10px rgba(158, 13, 13, 0.912);
     text-align: center;
     transition: transform 0.3s ease; /* Hinzugefügter Hover-Effekt */
 }
@@ -84,8 +84,8 @@ input[type="password"]:hover {
 }
 
 input[type="submit"] {
-    background-color: #3498db;
-    color: #fff;
+    background-color: #dbd834;
+    color: #e90808;
     border: none;
     padding: 10px 20px;
     font-size: 1.2em;
