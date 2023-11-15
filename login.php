@@ -5,8 +5,9 @@ require('Authentication.php');
 
 $auth = new Authentication("localhost", "root", "neues-passwort", "Benutzeranmeldung");
 //Changes
-$Benutzername = $_POST["Benutzername"];
-$Passwort = $_POST["Passwort"];
+var_dump($_POST);
+$Benutzername = $_POST["benutzername"];
+$Passwort = $_POST["passwort"];
 // var_dump($Benutzername, $Passwort);
 if ($auth->login($Benutzername, $Passwort)) {
     echo "<p>Anmeldung erfolgreich. Willkommen, $Benutzername!</p>";
