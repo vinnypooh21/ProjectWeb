@@ -75,7 +75,7 @@
 
     </section>
     <footer>
-        <p>&copy; <?php echo date("Y"); ?> Data Upload & Download Service</p>
+        <p>&copy; <?php echo date("Y"); ?> File Share Service</p>
     </footer>
 </body>
 
