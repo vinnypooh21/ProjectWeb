@@ -1,123 +1,89 @@
-/* style.css */
-
-/* Link-Menü-Stil */
-.nav-menu {
-    position: fixed;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 200px;
-    background-color: #333; /* Hintergrundfarbe des Menüs */
-    padding: 20px 0;
-    text-align: center;
-}
-
-.nav-menu a {
-    display: block;
-    text-decoration: none;
-    color: #fff;
-    padding: 10px 0;
-    transition: background-color 0.3s ease; /* Sanfte Farbübergänge bei Hover */
-}
-
-.nav-menu a:hover {
-    background-color: #555; /* Hintergrundfarbe bei Hover */
-}
-
-
-/* Allgemeine Stildefinitionen für den gesamten Inhalt */
-body {
-    font-family: Arial, sans-serif;
+/* Reset some default styles */
+* {
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #3498db, #8e44ad); /* Blau zu Lila Farbverlauf */
-    color: #fff; /* Textfarbe auf Weiß setzen */
+    box-sizing: border-box;
 }
 
-/* Header-Stil */
+/* Body styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header styles */
 header {
-    text-align: center;
+    background-color: #000;
+    color: #fff;
     padding: 20px;
+    text-align: center;
 }
 
 header h1 {
     font-size: 2.5em;
 }
 
-
-
-/* Login-Bereich-Stil */
-.login-section {
+/* Navigation styles */
+nav {
+    background-color: #333;
+    padding: 10px;
     text-align: center;
-    padding: 40px;
 }
 
-.login-section h2 {
-    font-size: 2em;
-}
-
-.login-section p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-}
-
-.login-section button {
-    background-color: #3498db; /* Blaue Hintergrundfarbe für den Button */
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1.2em;
-    cursor: pointer;
-    transition: background-color 0.3s ease; /* Sanfte Farbübergänge bei Hover */
-}
-
-.login-section button:hover {
-    background-color: #2980b9; /* Dunklere Blaufarbe beim Hover */
-}
-
-/* Download-Bereich-Stil */
-.download-section {
-    text-align: center;
-    padding: 40px;
-}
-
-.download-section h2 {
-    font-size: 2em;
-}
-
-.download-section ul {
-    list-style: none;
-    padding: 0;
-}
-
-.download-section li {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-}
-
-.download-section a {
+nav a {
     text-decoration: none;
     color: #fff;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
-/* Footer-Stil */
+nav a:hover {
+    background-color: #555;
+}
+
+/* Main content container */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Footer styles */
 footer {
+    background-color: #000;
+    color: #fff;
     text-align: center;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.2); /* Transparenter Hintergrund für den Footer */
-    color: #fff;
 }
 
-/* Copyright-Text-Stil */
+/* Copyright text styles */
 footer p {
     font-size: 1.2em;
 }
 
-input[type="file"] {
-    display: none;
+/* Button styles */
+.button {
+    background-color: #0077cc;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-/* Stile für den angepassten Upload-Button */
+.button:hover {
+    background-color: #005fa6;
+}
+
+/* File upload styles */
 .custom-upload-btn {
     background-color: #0077cc;
     color: white;
@@ -134,15 +100,10 @@ input[type="file"] {
     cursor: pointer;
 }
 
-/* Stile für das angepasste Upload-Element */
 .custom-upload-input {
     width: 0;
     height: 0;
     overflow: hidden;
     position: absolute;
     z-index: -1;
-}
-
-.file{
-    background-color: #0077ab;
 }
