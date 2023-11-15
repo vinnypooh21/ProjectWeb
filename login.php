@@ -4,7 +4,7 @@ use Authentication;
 require('Authentication.php');
 
 $auth = new Authentication("localhost", "root", "neues-passwort", "Benutzeranmeldung");
-
+//Changes
 $Benutzername = $_POST["Benutzername"];
 $Passwort = $_POST["Passwort"];
 // var_dump($Benutzername, $Passwort);
