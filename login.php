@@ -49,7 +49,7 @@ $auth->close();
 
 <?php
     if(isset($_POST['redirect'])) {
-        header('Location: <link> http://172.18.77.89/homes/</link>');
+        header('http://172.18.77.89/homes/');
         exit;
     }
     ?>
