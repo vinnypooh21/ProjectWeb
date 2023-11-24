@@ -107,6 +107,7 @@ header h1 {
 /* Footer-Stil */
 footer {
     text-align: center;
+    padding-top: 50%;;
     padding: 20px;
     background-color: rgba(87, 84, 84, 0.2); /* Transparenter Hintergrund für den Footer */
     color: #fff;
