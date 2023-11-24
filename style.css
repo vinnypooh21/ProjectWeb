@@ -35,6 +35,7 @@ body {
      margin: 0;
     padding: 0;
     background-image: url('baaack.jpg');
+    padding-left: 200px;
     background-repeat: no-repeat;
     background-size: cover;
     color: #010101;  /*Textfarbe auf Weiß setzen */
