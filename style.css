@@ -32,12 +32,7 @@
 /* Allgemeine Stildefinitionen für den gesamten Inhalt */
 body {
     font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
-     margin: 0;
-    padding: 0;
-    background-image: url('baaack.jpg');
-    padding-left: 200px;
-    background-repeat: no-repeat;
-    background-size: cover;
+   
     color: #010101;  /*Textfarbe auf Weiß setzen */
     
 
@@ -46,7 +41,12 @@ body {
 /* Header-Stil */
 header {
     text-align: center;
-    padding: 20px;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    background-image: url('baaack.jpg');
+    padding-left: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #010101;  /*Textfarbe auf Weiß setzen */
 }
 
 header h1 {
