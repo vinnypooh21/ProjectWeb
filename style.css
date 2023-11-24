@@ -10,6 +10,9 @@
     background-color: linear-gradient(to bottom, #d0d1d1, #ae7dc3); ; /* Hintergrundfarbe des Menüs */
     padding: 20px 0;
     text-align: center;
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .nav-menu a {
@@ -31,10 +34,8 @@ body {
     margin: 0;
     padding: 0;
     background: linear-gradient(to bottom, #d0d1d1, #d3b6df); /* Blau zu Lila Farbverlauf */
-    color: #fff;  /*Textfarbe auf Weiß setzen */
-    background-image: url('background.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    color: #9d4040;  /*Textfarbe auf Weiß setzen */
+    
 
 }
 
