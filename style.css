@@ -34,7 +34,7 @@ body {
     font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
      margin: 0;
     padding: 0;
-    background-image: url('background.jpg');
+    background-image: url('background.png');
     background-repeat: no-repeat;
     background-size: cover;
     color: #010101;  /*Textfarbe auf Weiß setzen */
