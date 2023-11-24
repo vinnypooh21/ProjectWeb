@@ -6,12 +6,12 @@
     position: fixed;
     left: 0;
     top: 0;
-    height: 30%;
+    height: 100%;
     width: 200px;
     background-color: linear-gradient(to bottom, rgb(77, 132, 132), #55196e); ; /* Hintergrundfarbe des Menüs */
     padding: 20px 0;
     text-align: center;
-    background-image: url('background.jpg');
+    background-image: url('nav.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -34,7 +34,7 @@ body {
     font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
      margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #d0d1d1, #d3b6df); /* Blau zu Lila Farbverlauf */
+    background-image: url('background.jpg');
     color: #010101;  /*Textfarbe auf Weiß setzen */
     
 
