@@ -2,10 +2,11 @@
 
 /* Link-Menü-Stil */
 .nav-menu {
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
     position: fixed;
     left: 0;
     top: 0;
-    height: 100%;
+    height: 30%;
     width: 200px;
     background-color: linear-gradient(to bottom, rgb(77, 132, 132), #55196e); ; /* Hintergrundfarbe des Menüs */
     padding: 20px 0;
@@ -31,7 +32,7 @@
 /* Allgemeine Stildefinitionen für den gesamten Inhalt */
 body {
     font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
-    /* margin: 0;
+     margin: 0;
     padding: 0;
     background: linear-gradient(to bottom, #d0d1d1, #d3b6df); /* Blau zu Lila Farbverlauf */
     color: #010101;  /*Textfarbe auf Weiß setzen */
