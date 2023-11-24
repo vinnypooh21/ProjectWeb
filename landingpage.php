@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css"> <!-- Verknüpfen Sie hier Ihre CSS-Datei -->
-    <title>Data Upload & Download Service</title>
+    
+
+    <header>
+        <h1>Welcome to OwnCloud!</h1>
+    </header>
 
 </head>
 
@@ -19,9 +23,7 @@
     </div>
 
 
-    <header>
-        <h1>Data Upload & Download Service</h1>
-    </header>
+   
 
     <section class="login-section">
         <?php
@@ -45,7 +47,7 @@
         } else {
             echo '<h2>Login</h2>
         <p>Bitte melden Sie sich an, um Dateien hochzuladen und herunterzuladen.</p>
-        <a href="login.html"><button>Login</button></a>';
+        <a href="login.html"><button>Weiter zum Login!</button></a>';
         }
         // $username = "benutzername"; // Ersetzen Sie "benutzername" durch den tatsächlichen Benutzernamen
         $userFolder = "/home/" . $username . "/dateinspeicher"; // Ersetzen Sie den Pfad entsprechend
@@ -74,9 +76,9 @@
 
 
     </section>
-    <footer>
-        <p>&copy; <?php echo date("Y"); ?> File Share Service</p>
-    </footer>
+   
 </body>
-
+    <footer>
+        <p>&copy; <?php echo date("Y"); ?> You Data ist Hosted by OwnCloud</p>
+    </footer>
 </html>

@@ -27,11 +27,15 @@
 
 /* Allgemeine Stildefinitionen für den gesamten Inhalt */
 body {
-    font-family: Arial, sans-serif;
+    /*font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background: linear-gradient(to bottom, #d0d1d1, #d3b6df); /* Blau zu Lila Farbverlauf */
-    color: #fff; /* Textfarbe auf Weiß setzen */
+    color: #fff;  /*Textfarbe auf Weiß setzen */
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 /* Header-Stil */
