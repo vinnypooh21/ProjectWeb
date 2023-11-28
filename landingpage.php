@@ -8,7 +8,7 @@
     
 
     <header>
-        <h1>Welcome to OwnCloud!</h1> <img src="logo.jpg" alt="Apple Logo" class="logo">
+        <h1>Welcome to OwnCloud!</h1> 
     </header>
 
 </head>

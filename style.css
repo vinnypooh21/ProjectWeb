@@ -43,10 +43,11 @@ header {
     text-align: center;
     font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
     background-image: url('baaack.jpg');
-    padding-left: 200px;
+    padding: 40;
+    margin: 30;
     background-repeat: no-repeat;
     background-size: cover;
-    color: #010101;  /*Textfarbe auf Weiß setzen */
+    color: #c3baba;  /*Textfarbe auf Weiß setzen */
 }
 
 header h1 {
