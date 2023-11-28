@@ -38,6 +38,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    margin: 5%;
     
 
 }
@@ -48,7 +49,7 @@ header {
     font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
     
     color: #ffffff;  /*Textfarbe auf Weiß setzen */
-    padding-bottom: 2%;
+    margin-bottom: 10%;
     
    
 }
