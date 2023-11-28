@@ -3,17 +3,13 @@
 /* Link-Menü-Stil */
 .nav-menu {
     font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
-    position: fixed;
-    left: 0;
-    top: 0;
+    justify-content: center;
     height: 100%;
     width: 200px;
     background-color: linear-gradient(to bottom, rgb(77, 132, 132), #55196e); ; /* Hintergrundfarbe des Menüs */
     padding: 20px 0;
     text-align: center;
     
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .nav-menu a {
