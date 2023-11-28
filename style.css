@@ -46,8 +46,9 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     color: #c3baba;  /*Textfarbe auf Weiß setzen */
-    padding: 20%;
-    margin: 10%;
+    margin-bottom: 100%;
+    
+   
 }
 
 header h1 {
