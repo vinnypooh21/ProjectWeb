@@ -13,7 +13,7 @@
     display: block;
     text-decoration: none;
     color: #080808;
-    padding: 100px 5;
+    
     transition: background-color 0.3s ease; /* Sanfte Farbübergänge bei Hover */
     margin-left: 8%;
     padding-left: 4%;
