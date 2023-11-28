@@ -34,6 +34,9 @@ body {
     font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
    
     color: #010101;  /*Textfarbe auf Weiß setzen */
+    background-image: url('baaack.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     
 
 }
@@ -42,9 +45,7 @@ body {
 header {
     text-align: center;
     font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
-    background-image: url('baaack.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    
     color: #c3baba;  /*Textfarbe auf Weiß setzen */
     
     
