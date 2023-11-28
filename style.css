@@ -95,6 +95,7 @@ header h3 {
     cursor: pointer;
     text-decoration: none;
     transition: background-color 0.3s;
+    background-color: linear-gradient(to bottom, rgb(77, 132, 132), rgb(255, 255, 255) 41, 110); ; /* Hintergrundfarbe des buttons */
   }
   
   .login-button:hover {
