@@ -8,11 +8,14 @@
 
     <header>
         
-        <div class="nav-menu">
-            <a href="landingpage.php">Home</a>
-            <a href="register.html">Registrieren</a>
-            <a href="login.html">Login</a>
-            <!-- <button>Logout</button> -->
+        <div class="container">
+            <img src="logo.jpg" alt="Apple Logo" class="logo">
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Products</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+            </nav>
         </div>
 
         <h1>Welcome to OwnCloud!</h1> 
