@@ -37,10 +37,7 @@ body {
     /*background-image: url('Pictures/home.png');*/
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 5%;
-    padding-left: 5%;
-    padding-bottom: 20%;
-    margin: 5%;
+   
     
 
 }
@@ -51,8 +48,8 @@ header {
     font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
     color: #ffffff;  /*Textfarbe auf Weiß setzen */
     background-image: url('Pictures/Banner.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+    /*background-repeat: no-repeat;
+    background-size: cover;*/
     
    
 }
