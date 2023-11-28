@@ -207,3 +207,68 @@ input[type="file"] {
 .file{
     background-color: #0077ab;
 }
+
+
+
+ 
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.login-box {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(158, 13, 13, 0.912);
+    text-align: center;
+    transition: transform 0.3s ease; /* Hinzugefügter Hover-Effekt */
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    font-size: 1.2em;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2em;
+    margin-bottom: 20px; /* Vergrößerte Lücke zwischen den Feldern */
+    border: none; /* Entfernen Sie die Feldgrenzen */
+    border-bottom: 2px solid #3498db; /* Fügen Sie eine untere Linie hinzu */
+    background-color: transparent; /* Transparenter Hintergrund */
+    transition: border-bottom 0.3s ease; /* Hinzugefügter Hover-Effekt für die untere Linie */
+}
+
+input[type="text"]:hover,
+input[type="password"]:hover {
+    border-bottom: 2px solid #2980b9; /* Ändern Sie die Linienfarbe bei Hover */
+}
+
+input[type="submit"] {
+    background-color: #dbd834;
+    color: #e90808;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #2980b9;
+}
