@@ -11,10 +11,10 @@
         <div class="container">
             
             <nav>
-                <a href="#">Home</a>
-                <a href="#">Products</a>
-                <a href="#">Services</a>
-                <a href="#">Contact</a>
+                <a href="landingpage.php">Home</a>
+                <a href="register.html">Register</a>
+                <a href="login.html">Login</a>
+               
             </nav>
         </div>
 
