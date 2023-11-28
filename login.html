@@ -3,7 +3,7 @@
 
 
 <head>
-    <link rel="stylesheet" type="text/css" href="style_login.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Benutzeranmeldung</title>
 
     <header>
@@ -16,10 +16,23 @@
             </ul>
         </nav>
 
-    </header>
-
+        <div class="container-login">
+        
+            <div class="login-box">
+                <h1>Benutzeranmeldung</h1>
+                <form action="login.php" method="post">
+                    <label for="benutzername">Benutzername:</label>
+                    <input type="text" id="benutzername" name="benutzername" required><br><br>
+    
+                    <label for="passwort">Passwort:</label>
+                    <input type="password" id="passwort" name="passwort" required><br><br>
+    
+                    <input type="submit" value="Anmelden">
+                </form>
+            </div>
+        </div>
+</header>
 </head>
-
 
 <body>
     
