@@ -8,15 +8,13 @@
 
     <header>
         
-        <div class="container">
-            
-            <nav>
-                <a href="landingpage.php">Home</a>
-                <a href="register.html">Register</a>
-                <a href="login.html">Login</a>
-               
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li><a href="landingpage.php">Home</a></li>
+                    <li><a href="register.html">Registrieren</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
             </nav>
-        </div>
 
         <h1>Welcome to OwnCloud!</h1> 
         <h3>In der Cloud werden deine Daten sicher und geschützt aufbewahrt. Du kannst dich darauf verlassen, dass sie vor Verlust oder Beschädigung geschützt sind. Mit meinem Online-Cloud-Speicherdienst kannst du ganz einfach deine Dateien hochladen und sicher speichern. Wenn du auf meine Hauptseite gehst, findest du dort einen Login-Bereich, über den du bequem auf deine gespeicherten Daten zugreifen kannst. </h3>
