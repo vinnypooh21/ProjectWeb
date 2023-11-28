@@ -8,6 +8,13 @@
 
     <header>
         
+        <div class="nav-menu">
+            <a href="landingpage.php">Home</a>
+            <a href="register.html">Registrieren</a>
+            <a href="login.html">Login</a>
+            <!-- <button>Logout</button> -->
+        </div>
+
         <h1>Welcome to OwnCloud!</h1> 
         <h3>In der Cloud werden deine Daten sicher und geschützt aufbewahrt. Du kannst dich darauf verlassen, dass sie vor Verlust oder Beschädigung geschützt sind. Mit meinem Online-Cloud-Speicherdienst kannst du ganz einfach deine Dateien hochladen und sicher speichern. Wenn du auf meine Hauptseite gehst, findest du dort einen Login-Bereich, über den du bequem auf deine gespeicherten Daten zugreifen kannst. </h3>
     
@@ -21,18 +28,7 @@
 
 <body>
 
-    <div class="nav-menu">
-        <a href="landingpage.php">Home</a>
-        <a href="register.html">Registrieren</a>
-        <a href="login.html">Login</a>
-        <!-- <button>Logout</button> -->
-    </div>
-
-
-   
-
-   
-        
+    
     <section class="login-section">
         <?php
         session_start();

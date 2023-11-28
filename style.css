@@ -4,18 +4,14 @@
 .nav-menu {
     font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
     justify-content: center;
-    height: 100%;
-    width: 200px;
-    background-color: linear-gradient(to bottom, rgb(77, 132, 132), #55196e); ; /* Hintergrundfarbe des Menüs */
-    padding: 20px 0;
-    text-align: center;
+   
     
 }
 
 .nav-menu a {
     display: block;
     text-decoration: none;
-    color: #fff;
+    color: #080808;
     padding: 10px 0;
     transition: background-color 0.3s ease; /* Sanfte Farbübergänge bei Hover */
 }
