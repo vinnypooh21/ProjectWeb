@@ -50,7 +50,7 @@ header {
     padding-right: 0;
     margin-right: 0%;
     margin-left: 8%;
-    text-align: center;
+    text-align: left;
     font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
     color: #ffffff;  /*Textfarbe auf Weiß setzen */
     background-image: url('Pictures/banner-43.png');
@@ -70,6 +70,7 @@ header h1 {
     margin-top: 0;
     padding-top: 0%;
     margin-right: 37%;
+    padding-left: 4%;
 }
 
 header h3 {
@@ -79,7 +80,7 @@ header h3 {
     text-align: left;
     position: top center;
     margin-left: 8%;
-    margin-right: 50%;
+    margin-right: 59%;
     line-height: 1.7;
 }
 
