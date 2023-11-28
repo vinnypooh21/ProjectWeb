@@ -67,7 +67,7 @@ header {
 header h1 {
     font-size: 3em;
     color: #2fbffe;
-    position: top center;
+    margin-bottom: 50%;
 }
 
 header h3 {
