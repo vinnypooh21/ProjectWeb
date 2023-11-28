@@ -24,7 +24,7 @@
     <div class="nav-menu">
         <a href="landingpage.php">Home</a>
         <a href="register.html">Registrieren</a>
-        <a href="login.html" class="login-button">Login</a>
+        <a href="login.html">Login</a>
         <!-- <button>Logout</button> -->
     </div>
 
