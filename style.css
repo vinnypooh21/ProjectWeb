@@ -43,15 +43,6 @@ body {
 
 }
 
-header h1 {
-    font-size: 3em;
-    color: #2fbffe;
-}
-
-header h3 {
-    font-size: 1.5em;
-    color: #232324;
-}
 /* Header-Stil */
 header {
     padding-top: 30%;
@@ -73,7 +64,17 @@ header {
 
 
 
+header h1 {
+    font-size: 3em;
+    color: #2fbffe;
+    position: top center;
+}
 
+header h3 {
+    font-size: 1.5em;
+    color: #232324;
+    position: top center;
+}
 
 /* Login-Bereich-Stil */
 .login-section {
