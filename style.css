@@ -46,7 +46,7 @@ body {
 
 /* Header-Stil */
 header {
-    padding-top: 8%;
+    padding-top: 1%;
     padding-bottom: 200px;
     padding-right: 0;
     margin-right: 0%;
@@ -68,7 +68,7 @@ header {
 header h1 {
     font-size: 3.5em;
     color: #2fbffe;
-    margin-top: 0;
+    margin-top: 5%;
     padding-top: 0%;
     margin-right: 37%;
     padding-left: 4%;
