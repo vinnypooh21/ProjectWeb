@@ -46,9 +46,9 @@ body {
 /* Header-Stil */
 header {
     padding-top: 30%;
-    padding-bottom: 10;
+    padding-bottom: 5px;
     padding-right: 0;
-    margin-right: 5%;
+    margin-right: 0%;
     
     text-align: center;
     font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
@@ -74,7 +74,7 @@ header h1 {
     text-align: center;
     padding: 60px;
     margin-top: 10px;
-    background-color: #9bd5fb;
+    background-color: #2fbffe;
 }
 
 .login-section h2 {
