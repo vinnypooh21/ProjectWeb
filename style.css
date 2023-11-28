@@ -76,12 +76,11 @@ header h1 {
 header h3 {
     font-size: 0.7em;
     color: #70708f;
-    margin-right: 30%;
     text-align: left;
-    position: top center;
-    margin-left: 8%;
+    margin-left: 0%;
     margin-right: 59%;
     line-height: 1.7;
+    padding-left: 4%;
 }
 
 /* Login-Bereich-Stil */
