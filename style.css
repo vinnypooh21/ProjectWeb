@@ -46,7 +46,7 @@ body {
 /* Header-Stil */
 header {
     padding-top: 30%;
-    padding-bottom: 0%;
+    padding-bottom: 10;
     padding-right: 0;
     margin-right: 5%;
     
@@ -72,7 +72,8 @@ header h1 {
 /* Login-Bereich-Stil */
 .login-section {
     text-align: center;
-    
+    padding: 60px;
+    margin-top: 10px;
     background-color: #9bd5fb;
 }
 
