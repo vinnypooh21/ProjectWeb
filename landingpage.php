@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css"> <!-- Verknüpfen Sie hier Ihre CSS-Datei -->
 
+    <header>
+        
+        <h1>Welcome to OwnCloud!</h1> 
+        <h3>Ihr verlässiger Online Cloud Dienst! </h3>
+    </header>
 
 </head>
 
@@ -19,11 +24,7 @@
     </div>
 
 
-    <header>
-        
-            <h1>Welcome to OwnCloud!</h1> 
-            <h3>Ihr verlässiger Online Cloud Dienst! </h3>
-    </header>
+   
 
    
         
