@@ -14,7 +14,7 @@
         //Login
         
         
-        <a href="login.html"><button>Weiter zum Login!</button></a>';
+        <a href="login.html" class="login-button">Login</a>
     </header>
 
 </head>
