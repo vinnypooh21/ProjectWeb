@@ -9,7 +9,7 @@
     <header>
         
         <div class="container">
-            <img src="logo.jpg" alt="Apple Logo" class="logo">
+            
             <nav>
                 <a href="#">Home</a>
                 <a href="#">Products</a>

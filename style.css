@@ -9,9 +9,11 @@
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+    display: block;
+    text-decoration: none;
+    color: #080808;
+    padding: 100px 5;
+    transition: background-color 0.3s ease; /* Sanfte Farbübergänge bei Hover */
 }
 
 .nav-menu a {
