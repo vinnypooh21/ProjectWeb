@@ -10,8 +10,7 @@
 
 .container {
     font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
-    display: block;
-    text-decoration: none;
+   
     color: #080808;
     
     transition: background-color 0.3s ease; /* Sanfte Farbübergänge bei Hover */
