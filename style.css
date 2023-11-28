@@ -44,7 +44,7 @@ body {
 
 /* Header-Stil */
 header {
-    padding-top: 30%;
+    padding-top: 0%;
     padding-bottom: 0%;
     padding-right: 0;
     padding margin-right: 0;
@@ -55,7 +55,7 @@ header {
     background-image: url('Pictures/banner-43.png');
     background-repeat: no-repeat;
     
-    background-position: center;
+    background-position: :right
     
     
     
