@@ -11,11 +11,11 @@
 .container {
     font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
    
-    color: #080808;
+    color: #6e2929;
     
     transition: background-color 0.3s ease; /* Sanfte Farbübergänge bei Hover */
-    margin-left: 8%;
     padding-left: 4%;
+    
 }
 
 .nav-menu a {
