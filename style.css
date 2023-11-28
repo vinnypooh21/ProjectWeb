@@ -293,14 +293,7 @@ input[type="submit"]:hover {
   box-sizing: border-box;
   font-family: 'Quicksand', sans-serif;
 }
-body 
-{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background: #000;
-}
+
 section 
 {
   position: absolute;
