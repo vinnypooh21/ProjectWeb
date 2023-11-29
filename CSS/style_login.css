@@ -27,6 +27,27 @@
     background-color: #88d8ff; /* Hintergrundfarbe bei Hover */
   }
 
+
+/* Header style */
+
+header {
+    padding-top: 1%;
+    padding-bottom: 200px;
+    padding-right: 0;
+    margin-right: 0%;
+    margin-left: 8%;
+    text-align: left;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    color: #ffffff;  /*Textfarbe auf Weiß setzen */
+    background-image: url('../Pictures/banner-43.png');
+    background-repeat: no-repeat;
+    
+    background-position: top right;
+    
+       
+}
+
+
 /* Style für die Login-Box */
 
 body {
