@@ -49,7 +49,7 @@ header {
     text-align: left;
     font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
     color: #ffffff;  /*Textfarbe auf Weiß setzen */
-    background-image: url('../Pictures/banner-43.png');
+    /*background-image: url('../Pictures/banner-43.png');*/
     background-repeat: no-repeat;
     background-position: top right;
     /* backdrop-filter: blur(9px); */
@@ -212,6 +212,7 @@ body::before {
     background-image: url('../Pictures/login-background.jpg');
     background-position: center;
     background-size: cover;
+    margin-top: 70px;
   }
   
   .container {
