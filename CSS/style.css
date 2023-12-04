@@ -46,10 +46,11 @@ body {
 /* Header-Stil */
 header {
     padding-top: 1%;
-    padding-bottom: 200px;
+    padding-bottom: 3%;
     padding-right: 0;
     margin-right: 0%;
     margin-left: 8%;
+    margin-bottom: 10%;
     text-align: left;
     font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
     color: #ffffff;
