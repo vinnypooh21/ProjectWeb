@@ -160,12 +160,15 @@ header h3 {
 }
 
 /* Footer-Stil */
+
 footer {
-    text-align: center;
-    padding-top: 50%;;
-    padding: 20px;
-    background-color: rgba(87, 84, 84, 0.2); /* Transparenter Hintergrund für den Footer */
-    color: rgb(8, 8, 8)000;
+    font-size: 1.2em;
+    padding-bottom: 200px;
+    margin-top: 5px;
+    background-image: linear-gradient(to bottom, rgb(255 255 255), #2fbffe57), url(../Pictures/login-background.jpg);
+    height: 25%;
+    padding-top: 300px;
+    border-radius: 10px;
 }
 
 /* Copyright-Text-Stil */
